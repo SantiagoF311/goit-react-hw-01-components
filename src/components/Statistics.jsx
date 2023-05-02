@@ -18,7 +18,7 @@ export const Statistics = ({ title, stats }) => {
             {title && <Title className='title'>{title}</Title>}
             <List className='start-list'>
                 {stats.map(stat => (
-                    <ListItem key={stat.label} className='item' style={{ backgroundColor: randomColor() }}>
+                    <ListItem key={stat.id} className='item' style={{ backgroundColor: randomColor() }}>
                         <ItemTitle1 className='label'>{stat.label}</ItemTitle1>
                         <ItemTitle2 className='percentage'>{stat.percentage} %</ItemTitle2>
                     </ListItem>
