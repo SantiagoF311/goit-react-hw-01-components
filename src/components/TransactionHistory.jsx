@@ -13,7 +13,8 @@ export const TransactionHistory = ({ items }) => {
             </tr>
         </thead>
             
-        <tbody>
+            <tbody>
+                
                 {items.map(item => {
                 return ( 
             <Tbodytr key={item.id}>
